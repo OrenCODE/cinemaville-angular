@@ -10,6 +10,11 @@ router.get('/', (req, res) => {
         .catch(err => console.log(err));
 });
 
+// GET movie by ID
+router.get('/:id', (req, res) => {
+    Movie.findById(req.params.id).then(movie => res.json(movie))
+});
+
 // DELETE movie
 router.delete('/:id', (req, res) => {
     Movie.findById(req.params.id).then(movie =>

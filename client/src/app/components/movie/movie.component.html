@@ -1,0 +1,17 @@
+<a routerLink="/" class="btn btn-light btn-sm mb-3">Back</a>
+
+<div *ngIf="movie" class="card card-body">
+  <div class="row">
+    <div class="col-sm-4">
+      <img [src]="movie.image" class="img-fluid" alt="..."/>
+    </div>
+    <div class="col-sm-8">
+      <h5>{{ movie.name }}</h5>
+      <p>{{ movie.genre }}</p>
+      <p>{{ movie.year }}</p>
+      <p>{{ movie.actors }}</p>
+      <hr>
+      <button class="btn btn-light btn-sm"><i class="fa fa-pencil"></i></button>
+    </div>
+  </div>
+</div>
