@@ -26,15 +26,14 @@ router.delete('/:id', (req, res) => {
 
 // Add movie
 router.post('/', (req, res) => {
-    const {title, actors, genre} = req.body;
+    const {name, genre, actors, year, } = req.body;
     let newMovie = new Movie({
-        title,
-        actors,
+        name,
         genre
     });
 
     newMovie.save()
-        .then(movie => res.json(movie))
+        .then(movie => res.json({movie, success:true}))
 });
 
 // Edit Movie

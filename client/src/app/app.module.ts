@@ -7,7 +7,6 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MoviesComponent } from './components/movies/movies.component';
-
 import { MovieFormComponent } from './components/movie-form/movie-form.component';
 
 import { MovieService } from "./services/movie.service";
@@ -19,7 +18,7 @@ import { MovieComponent } from './components/movie/movie.component';
     NavbarComponent,
     MovieFormComponent,
     MoviesComponent,
-    MovieComponent
+    MovieComponent,
   ],
   imports: [
     BrowserModule,
